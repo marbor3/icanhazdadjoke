@@ -108,9 +108,20 @@
   line-height: 1.5;
 }
 
+.footerLink {
+  color: #4a4a4a;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 28px;
+  font-family: BlinkMacSystemFont, -apple-system, segoe ui, roboto, oxygen,
+    ubuntu, cantarell, fira sans, droid sans, helvetica neue, helvetica, arial,
+    sans-serif;
+}
+
 .logo {
-  height: 1em;
-  margin-left: 0.5rem;
+  margin-left: 16px;
+  margin-right: 4px;
+  display: flex;
 }
 
 @media (max-width: 600px) {
