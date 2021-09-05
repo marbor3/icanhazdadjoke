@@ -1,8 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
+import Jokes from "../src/components/jokes/Jokes";
 import styles from "../styles/Home.module.css";
 
-export default function Home() {
+export default function Home({ page }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -12,9 +13,8 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <h1 className={styles.title}>Jokes</h1>
+        <Jokes page={page} />
       </main>
 
       <footer className={styles.footer}>
@@ -38,4 +38,14 @@ export default function Home() {
       </footer>
     </div>
   );
+}
+
+export async function getServerSideProps(context) {
+  let { page } = context.query;
+
+  return {
+    props: {
+      page: page ? parseInt(page, 10) : 1,
+    },
+  };
 }
