@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Elements - DadJoke renders given joke 1`] = `
+<div>
+  <article
+    class="article"
+    data-testid="joke"
+  >
+    How come the stadium got hot after the game? Because all of the fans left.
+  </article>
+</div>
+`;

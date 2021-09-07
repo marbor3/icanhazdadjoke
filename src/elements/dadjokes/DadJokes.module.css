@@ -1,0 +1,12 @@
+.jokes {
+  display: block;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 32px;
+  max-width: 1248px;
+}
+
+.jokes__list-item {
+  margin-top: 24px;
+}

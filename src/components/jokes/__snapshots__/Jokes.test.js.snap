@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components - Jokes going to last page disables next button 1`] = `
+<div>
+  <ul
+    class="jokes"
+  >
+    <li
+      class="jokes__list-item"
+      data-testid="joke-list-item"
+    >
+      <article
+        class="article"
+        data-testid="joke"
+      >
+        How come the stadium got hot after the game? Because all of the fans left.
+      </article>
+    </li>
+  </ul>
+  <div
+    class="jokes__pagination"
+  >
+    <button
+      class="jokes__pagination-button"
+      data-testid="prev"
+    >
+      Previous
+    </button>
+    <button
+      class="jokes__pagination-button"
+      data-testid="next"
+      disabled=""
+    >
+      Next
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Components - Jokes on clicking next renders next page of jokes 1`] = `
+<div>
+  <ul
+    class="jokes"
+  >
+    <li
+      class="jokes__list-item"
+      data-testid="joke-list-item"
+    >
+      <article
+        class="article"
+        data-testid="joke"
+      >
+        Why did the tomato blush? Because it saw the salad dressing.
+      </article>
+    </li>
+    <li
+      class="jokes__list-item"
+      data-testid="joke-list-item"
+    >
+      <article
+        class="article"
+        data-testid="joke"
+      >
+        Did you hear the joke about the wandering nun? She was a roman catholic.
+      </article>
+    </li>
+    <li
+      class="jokes__list-item"
+      data-testid="joke-list-item"
+    >
+      <article
+        class="article"
+        data-testid="joke"
+      >
+        What creature is smarter than a talking parrot? A spelling bee.
+      </article>
+    </li>
+  </ul>
+  <div
+    class="jokes__pagination"
+  >
+    <button
+      class="jokes__pagination-button"
+      data-testid="prev"
+    >
+      Previous
+    </button>
+    <button
+      class="jokes__pagination-button"
+      data-testid="next"
+    >
+      Next
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Components - Jokes renders first page of jokes 1`] = `
+<div>
+  <ul
+    class="jokes"
+  >
+    <li
+      class="jokes__list-item"
+      data-testid="joke-list-item"
+    >
+      <article
+        class="article"
+        data-testid="joke"
+      >
+        How come the stadium got hot after the game? Because all of the fans left.
+      </article>
+    </li>
+    <li
+      class="jokes__list-item"
+      data-testid="joke-list-item"
+    >
+      <article
+        class="article"
+        data-testid="joke"
+      >
+        Why was it called the dark ages? Because of all the knights. 
+      </article>
+    </li>
+    <li
+      class="jokes__list-item"
+      data-testid="joke-list-item"
+    >
+      <article
+        class="article"
+        data-testid="joke"
+      >
+        A steak pun is a rare medium well done.
+      </article>
+    </li>
+  </ul>
+  <div
+    class="jokes__pagination"
+  >
+    <button
+      class="jokes__pagination-button"
+      data-testid="prev"
+      disabled=""
+    >
+      Previous
+    </button>
+    <button
+      class="jokes__pagination-button"
+      data-testid="next"
+    >
+      Next
+    </button>
+  </div>
+</div>
+`;

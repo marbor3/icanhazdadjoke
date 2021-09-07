@@ -1,16 +1,3 @@
-.jokes {
-  display: block;
-  gap: 20px;
-  list-style: none;
-  margin: 0;
-  padding: 32px;
-  max-width: 1248px;
-}
-
-.jokes__list-item {
-  margin-top: 24px;
-}
-
 .jokes__pagination {
   display: flex;
 }
@@ -28,4 +15,9 @@
 
 .jokes__pagination-button:hover {
   border-color: #fede58;
+}
+
+.jokes__pagination-button[disabled] {
+  border-color: #fede58;
+  opacity: 0.5;
 }

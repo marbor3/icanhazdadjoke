@@ -1,3 +1,5 @@
+import fetch from "isomorphic-fetch";
+
 const validResponse = function validResponse(response) {
   return response && response.ok;
 };
@@ -11,19 +13,13 @@ export default async function getJokes(page) {
         Accept: "application/json",
       },
     }
-  ).catch((e) => {
-    responseData.message = "API - fetch error.";
-  });
+  );
 
   if (!validResponse(response)) {
-    responseData.message = `${response.status}. Error when connecting to API.`;
+    throw new Error(`${response.status}. Error when connecting to API.`);
   }
 
-  try {
-    responseData.data = await response.json();
-  } catch (error) {
-    responseData.message = "API - error parsing respose ";
-  }
+  responseData.data = await response.json();
 
   return responseData;
 }
